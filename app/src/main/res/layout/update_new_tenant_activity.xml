@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6E7BC5">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/edtTenantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/stroke"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:maxLength="25"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTenantName"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/stroke"
+        android:maxLength="10"
+        android:hint="MobileNumber"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtHouseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtMobileNumber"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/stroke"
+        android:hint="HouseNumber"
+        android:inputType="number"
+        android:maxLength="5"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtHouseNumber"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/stroke"
+        android:hint="Job"
+        android:inputType="text"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtRent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtJob"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/stroke"
+        android:hint="Rent"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtDeposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtRent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/stroke"
+        android:hint="Deposit"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textSize="20sp">
+
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imgCal"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/edtDeposit"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:padding="16dp"
+        android:src="@drawable/calendar" />
+
+
+    <TextView
+        android:id="@+id/textStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDeposit"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="   Select Date"
+        android:padding="5dp"
+        android:textColor="#2C2C2C"
+        android:textColorHint="#D1CDCD"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textStartDate"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/white_circular_bg"
+        android:hint="Update"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgCall"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/btnUpdate"
+        android:layout_gravity="center"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_circular_bg"
+        android:padding="8dp"
+        android:src="@drawable/phone">
+
+    </ImageView>
+
+
+</RelativeLayout>
+
+</ScrollView>

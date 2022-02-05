@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#6E7BC5"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/edtTenantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/stroke"
+        android:drawablePadding="5dp"
+        android:hint="Tenant Name"
+        android:inputType="text"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#9F9E9E"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtRentAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTenantName"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/stroke"
+        android:drawablePadding="5dp"
+        android:hint="Rent  Amount"
+        android:inputType="number"
+        android:maxLength="5"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#9F9E9E"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtRentAmount"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/stroke"
+        android:hint="Paid or Unpaid"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="#9F9E9E"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imgCal"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/edtStatus"
+        android:layout_marginTop="15dp"
+        android:padding="16dp"
+        android:src="@drawable/calendar" />
+
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="240dp"
+        android:layout_toRightOf="@id/imgCal"
+        android:hint="Select Date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:textColor="#2C2C2C"
+        android:textColorHint="#D1CDCD"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDate"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/blue_circular_bg"
+        android:backgroundTint="#FF5722"
+        android:hint="Submit"
+        android:textColor="@color/white"
+        android:textColorHint="#DDDADA"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

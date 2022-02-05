@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tenant Manager</string>
+    <string name="paid_or_unpaid">TanentManager</string>
+    <string name="add_tenant">TanentManager</string>
+    <string name="screenshot_take_failed">TanentManager</string>
+    <string name="sharing_text">TanentManager</string>
+    <string name="share_title">TanentManager</string>
+</resources>
